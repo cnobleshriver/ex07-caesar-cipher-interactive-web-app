@@ -62,4 +62,4 @@ class decoderRing extends decoder {
 }
 
 // TASK #2: export the decoder class
-
+export default decoder;

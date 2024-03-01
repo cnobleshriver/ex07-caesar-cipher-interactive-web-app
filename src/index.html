@@ -2,21 +2,10 @@
 <html lang="en">
   <head>
     <title>Encoder/Decoder</title>
-    <!-- TASK #2: remove the script tags-->
-    <script src="decoderRingClass.js"></script>
-    <script>
-      'use strict';
-      function doIt() {
-        const key = document.getElementById('key').value,
-          encodeStr = document.getElementById('encode').value,
-          decodeStr = document.getElementById('decode').value,
-          c = new decoder(key);
-        document.getElementById('encoded').value = c.encode(encodeStr);
-        document.getElementById('decoded').value = c.decode(decodeStr);
-      }
-    </script>
     <!-- TASK #2: create a new script tag, load interactive.js as a module -->
-    
+    <script type="module" src="interactive.js">
+      document.getElementById("key").addEventListener("keypress", validateKeyTextInput);
+    </script>
   </head>
   <body>
     <center>
@@ -28,7 +17,7 @@
       <br />
       <form>
         <label for="key">Key:</label>
-        <input type="text" id="key" />
+        <input type="text" id="key"/>
         <br /><br />
         <label for="encode">Text to encode:</label>
         <input type="text" id="encode" />
@@ -41,7 +30,6 @@
         <input type="text" id="decoded" readonly="readonly" />
         <br /><br />
         <!-- TASK #2: remove the button -->
-        <input type="button" onClick="doIt()" value="Go" />
       </form>
     </center>
   </body>

@@ -1,11 +1,20 @@
 // TASK #2: import the decoder class
-
+import decoder from "./decoderRingClass.js";
 
 // Create a decoder object.
 const d = new decoder("");
 
 // TASK #3: Validate the cipher key text input
 function validateKeyTextInput() {
+  console.log("Validating key text input... \n")
+  const key = document.getElementById("key").value;
+  if (key.length === 26 && key.toLowerCase() === key) {
+    // make white
+    console.log("keyTextBox is white");
+  } else {
+    // make yellow
+    console.log("keyTextBox is yellow");
+  }
   
   /* BEGIN_STUDENT
   throw new Error('Function not implemented');
