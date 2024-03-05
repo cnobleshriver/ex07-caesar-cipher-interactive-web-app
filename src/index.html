@@ -1,36 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Encoder/Decoder</title>
-    <!-- TASK #2: create a new script tag, load interactive.js as a module -->
-    <script type="module" src="interactive.js">
-      document.getElementById("key").addEventListener("keypress", validateKeyTextInput);
-    </script>
-  </head>
-  <body>
-    <center>
-      <h1>Encoder/decoder</h1>
-      <img
-        alt="decoder-ring"
-        src="https://github.com/emeryberger/web-programming/raw/master/decoder-ring.jpg"
-      />
-      <br />
-      <form>
-        <label for="key">Key:</label>
-        <input type="text" id="key"/>
-        <br /><br />
-        <label for="encode">Text to encode:</label>
-        <input type="text" id="encode" />
-        <label for="encoded">Encoded = </label>
-        <input type="text" id="encoded" readonly="readonly" />
-        <br /><br />
-        <label for="decode">Text to decode:</label>
-        <input type="text" id="decode" />
-        <label for="decoded">Decoded = </label>
-        <input type="text" id="decoded" readonly="readonly" />
-        <br /><br />
-        <!-- TASK #2: remove the button -->
-      </form>
-    </center>
-  </body>
+
+<head>
+  <title>Encoder/Decoder</title>
+  <!-- TASK #2: create a new script tag, load interactive.js as a module -->
+  <script type="module" src="interactive.js"></script>
+</head>
+
+<body>
+  <center>
+    <h1>Encoder/decoder</h1>
+    <img alt="decoder-ring" src="https://github.com/emeryberger/web-programming/raw/master/decoder-ring.jpg" />
+    <br />
+    <form>
+      <label for="key">Key:</label>
+      <input type="text" id="key" />
+      <br /><br />
+      <label for="encode">Text to encode:</label>
+      <input type="text" id="encode" />
+      <label for="encoded">Encoded = </label>
+      <input type="text" id="encoded" readonly="readonly" />
+      <br /><br />
+      <label for="decode">Text to decode:</label>
+      <input type="text" id="decode" />
+      <label for="decoded">Decoded = </label>
+      <input type="text" id="decoded" readonly="readonly" />
+      <br /><br />
+      <!-- TASK #2: remove the button -->
+    </form>
+  </center>
+</body>
+
 </html>
